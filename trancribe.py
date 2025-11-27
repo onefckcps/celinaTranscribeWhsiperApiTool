@@ -10,10 +10,15 @@ TEMP_FOLDER = "temp_chunks"
 
 st.set_page_config(page_title="Celina Transkribierer", layout="centered")
 st.title("🎙️ Celinas Interview Transkribierer!")
-st.markdown("Hier du Spinne - einfach die Audio-Datei von dem Interview hochladen und dann auf Transkribieren klicken. :) PEEEENIS 8=====> LOL. Achso und dann musst du in das Textfeld unterhalb den Key der in unserem Chat markiert ist eingeben! (ohne wirds nicht funktionieren). Bitte den API KeyNICHT an Freunde oder andere weitergeben, weil das KOSTET MICH GELD!")
+st.markdown("""
+# Anleitung
+Hier du Spinne: 
+1. einfach die Audio-Datei von dem Interview hochladen und dann auf Transkribieren klicken. :) PEEEENIS 8=====> LOL. 
+2. Achso und dann musst du in das Textfeld unterhalb den Key der in unserem Chat markiert ist eingeben! (ohne wirds nicht funktionieren). Bitte den API Key (der in unserem Chat markiert ist) NICHT an Freunde oder andere weitergeben, weil das KOSTET MICH GELD!""")
 st.markdown("")
 
 # 1. API Key Input
+st.markdown("API Key hier finden: [OpenAI Settings](https://platform.openai.com/settings/organization/api-keys)")
 api_key = st.text_input("OpenAI API Key", type="password")
 
 # 2. File Uploader
