@@ -8,15 +8,15 @@ import io
 CHUNK_SIZE_MB = 24  # Puffer unter 25MB Limit halten
 TEMP_FOLDER = "temp_chunks"
 
-st.set_page_config(page_title="Whisper API Client", layout="centered")
-st.title("🎙️ Whisper API Transcriber")
+st.set_page_config(page_title="Celina Transkribierer", layout="centered")
+st.title("🎙️ Celinas Interview Transkribierer! :) PEEEENIS 8=====> LOL")
 st.markdown("Splittet große Dateien automatisch und nutzt Ihren API Key.")
 
 # 1. API Key Input
 api_key = st.text_input("OpenAI API Key", type="password")
 
 # 2. File Uploader
-uploaded_file = st.file_uploader("Audio wählen (mp3, wav, m4a...)", type=["mp3", "wav", "m4a", "mp4"])
+uploaded_file = st.file_uploader("Interview Audio-Datei wählen (mp3, wav, m4a...)", type=["mp3", "wav", "m4a", "mp4"])
 
 def transcribe_chunk(client, file_path):
     with open(file_path, "rb") as audio_file:
