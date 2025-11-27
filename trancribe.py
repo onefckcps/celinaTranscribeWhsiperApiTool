@@ -9,8 +9,9 @@ CHUNK_SIZE_MB = 24  # Puffer unter 25MB Limit halten
 TEMP_FOLDER = "temp_chunks"
 
 st.set_page_config(page_title="Celina Transkribierer", layout="centered")
-st.title("🎙️ Celinas Interview Transkribierer! :) PEEEENIS 8=====> LOL")
-st.markdown("Splittet große Dateien automatisch und nutzt Ihren API Key.")
+st.title("🎙️ Celinas Interview Transkribierer!")
+st.markdown("Hier du Spinne - einfach die Audio-Datei von dem Interview hochladen und dann auf Transkribieren klicken. :) PEEEENIS 8=====> LOL")
+st.markdown("")
 
 # 1. API Key Input
 api_key = st.text_input("OpenAI API Key", type="password")
